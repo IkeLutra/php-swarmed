@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "986e9d71d5223b98e6fb6c04b4e339aa",
+    "content-hash": "c8df036b91700b49eac36397f675da18",
     "packages": [
         {
             "name": "vlucas/phpdotenv",
@@ -1518,6 +1518,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^7.0"
+    },
     "platform-dev": []
 }
