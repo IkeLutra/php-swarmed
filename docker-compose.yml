@@ -1,0 +1,15 @@
+version: "3.1"
+services:
+  php:
+    image: php:7.1-cli
+    secrets:
+      - single_line_secret
+      - multi_line_secret
+    volumes:
+      - ./:/opt/php-swarmed
+    entrypoint: php /opt/php-swarmed/vendor/bin/phpunit -c /opt/php-swarmed/phpunit.xml
+secrets:
+  single_line_secret:
+    file: ./tests/secret1.txt
+  multi_line_secret:
+    file: ./tests/secret2.txt

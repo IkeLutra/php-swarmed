@@ -1,0 +1,22 @@
+{
+    "name": "ikelutra/php-swarmed",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Will Otterburn",
+            "email": "will@otterburn.me"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "IkeLutra\\Swarmed\\": "src/"
+        }
+    }
+}
