@@ -46,6 +46,12 @@ class SwarmedTest extends TestCase
         $this->assertEquals('FooBar', getenv('SINGLE_LINE_SECRET'));
     }
 
+    public function testInvalidDirectory()
+    {
+        $swarmed = new Swarmed('/foo/bar');
+        $this->assertFalse($swarmed->load());
+    }
+
     public function tearDown()
     {
         $this->loader->clearEnvironmentVariable('SINGLE_LINE_SECRET');
